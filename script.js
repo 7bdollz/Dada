@@ -19,7 +19,7 @@ let words = {
 let userInput = "";
 
 translateButton.addEventListener("click", () => {
-  userInput = inputField.value;
+  userInput = inputField.value.toLowerCase();
   let splitInput = userInput.split(" ");
   for (let i = 0; i < splitInput.length; i++) {
     for (let key in words) {
