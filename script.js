@@ -17,6 +17,9 @@ let words = {
   delicious: "yummy",
   doctor:"docor",
   apple:"apull",
+  food:"yum yum",
+  mom:"momma",
+  aeroplane:"aeyopane" 
 };
 let userInput = "";
 
