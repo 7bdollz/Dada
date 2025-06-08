@@ -15,19 +15,22 @@ let words = {
   car: "go go",
   pain: "owch",
   delicious: "yummy",
+  doctor:"docor",
+  apple:"apull",
 };
 let userInput = "";
 
 translateButton.addEventListener("click", () => {
-  userInput = inputField.value.toLowerCase();
+  userInput = inputField.value.toLowerCase(); // Convert input to lowercase
   let splitInput = userInput.split(" ");
   for (let i = 0; i < splitInput.length; i++) {
-    for (let key in words) {
-      if (splitInput[i] === key) {
-        splitInput[i] = words[key];
-      }
+    if (words.hasOwnProperty(splitInput[i])) { // Check if the word is a key
+      splitInput[i] = words[splitInput[i]]; // Replace with translation
     }
   }
+  let output = splitInput.join(" ");
+  outputField.value = output;
+});
   let output = splitInput.join(" ");
   outputField.value = output;
   inputField.value = "";
