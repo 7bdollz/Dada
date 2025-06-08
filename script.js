@@ -17,7 +17,7 @@ let words = {
   delicious: "yummy",
   doctor:"docor",
   apple:"apull",
-  food:"yum yum",
+  food:"yumyum",
   mom:"momma",
   aeroplane:"aeyopane" 
 };
