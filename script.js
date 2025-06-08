@@ -19,7 +19,7 @@ let words = {
   apple:"apull",
   food:"yumyum",
   mom:"momma",
-  aeroplane:"aeyopane" 
+  aeroplane:"aeyopane",
 };
 let userInput = "";
 
@@ -31,6 +31,7 @@ translateButton.addEventListener("click",() => {
       splitInput[i] = words[splitInput[i]]; // Replace with translation
     }
   }
+  inputField.value = ""
   let output = splitInput.join(" ");
   outputField.value = output;
 });
