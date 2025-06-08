@@ -20,7 +20,7 @@ let words = {
 };
 let userInput = "";
 
-translateButton.addEventListener("click", () => {
+translateButton.addEventListener("click",() => {
   userInput = inputField.value.toLowerCase(); // Convert input to lowercase
   let splitInput = userInput.split(" ");
   for (let i = 0; i < splitInput.length; i++) {
@@ -30,8 +30,4 @@ translateButton.addEventListener("click", () => {
   }
   let output = splitInput.join(" ");
   outputField.value = output;
-});
-  let output = splitInput.join(" ");
-  outputField.value = output;
-  inputField.value = "";
 });
